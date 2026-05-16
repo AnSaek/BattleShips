@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BattleShips</title>
+    <link rel="stylesheet" href="style/style.css">
+
+</head>
+<body>
+<h1 id="title">Battle Ships Game</h1>
+<button id="muteunmute-btn"><i class="fas fa-volume-off" id="volume" title="Sound" aria-hidden="true"></i></button>
+<div class="wrapper">
+<div class = "board">
+<div id = "column1" class = "column">
+  <div class = "square" id = "a10"></div>
+  <div class = "square"  id = "a9"></div>
+  <div class = "square" id = "a8"></div>
+  <div class = "square"  id = "a7"></div>
+  <div class = "square"  id = "a6"></div>
+  <div class = "square"  id = "a5"></div>
+  <div class = "square"  id = "a4"></div>
+  <div class = "square"  id = "a3"></div>
+  <div class = "square"  id = "a2"></div>
+  <div class = "square"  id = "a1"></div>
+</div>  
+<div id = "column2" class = "column">
+    <div class = "square" id = "b10"></div>
+    <div class = "square"  id = "b9"></div>
+    <div class = "square"  id = "b8"></div>
+    <div class = "square"  id = "b7"></div>
+    <div class = "square"  id = "b6"></div>
+    <div class = "square"  id = "b5"></div>
+    <div class = "square"  id = "b4"></div>
+    <div class = "square"  id = "b3"></div>
+    <div class = "square"  id = "b2"></div>
+    <div class = "square"  id = "b1"></div>
+</div>  
+<div id = "column3" class = "column">
+    <div class = "square" id = "c10"></div>
+    <div class = "square" id = "c9"></div>
+    <div class = "square" id = "c8"></div>
+    <div class = "square" id = "c7"></div>
+    <div class = "square" id = "c6"></div>
+    <div class = "square" id = "c5"></div>
+    <div class = "square" id = "c4"></div>
+    <div class = "square" id = "c3"></div>
+    <div class = "square" id = "c2"></div>
+    <div class = "square" id = "c1"></div>
+</div>  
+<div id = "column4" class = "column">
+    <div class = "square" id = "d10"></div>
+    <div class = "square" id = "d9"></div>
+    <div class = "square" id = "d8"></div>
+    <div class = "square" id = "d7"></div>
+    <div class = "square" id = "d6"></div>
+    <div class = "square" id = "d5"></div>
+    <div class = "square" id = "d4"></div>
+    <div class = "square" id = "d3"></div>
+    <div class = "square" id = "d2"></div>
+    <div class = "square" id = "d1"></div>
+</div> 
+<div id = "column5" class = "column">
+    <div class = "square" id = "e10"></div>
+    <div class = "square" id = "e9"></div>
+    <div class = "square" id = "e8"></div>
+    <div class = "square" id = "e7"></div>
+    <div class = "square" id = "e6"></div>
+    <div class = "square" id = "e5"></div>
+    <div class = "square" id = "e4"></div>
+    <div class = "square" id = "e3"></div>
+    <div class = "square" id = "e2"></div>
+    <div class = "square" id = "e1"></div>
+</div>  
+<div id = "column6" class = "column">
+    <div class = "square" id = "f10"></div>
+    <div class = "square" id = "f9"></div>
+    <div class = "square" id = "f8"></div>
+    <div class = "square" id = "f7"></div>
+    <div class = "square" id = "f6"></div>
+    <div class = "square" id = "f5"></div>
+    <div class = "square" id = "f4"></div>
+    <div class = "square" id = "f3"></div>
+    <div class = "square" id = "f2"></div>
+    <div class = "square" id = "f1"></div>
+</div>
+<div id = "column7" class = "column">
+    <div class = "square" id = "g10"></div>
+    <div class = "square" id = "g9"></div>
+    <div class = "square" id = "g8"></div>
+    <div class = "square" id = "g7"></div>
+    <div class = "square" id = "g6"></div>
+    <div class = "square" id = "g5"></div>
+    <div class = "square" id = "g4"></div>
+    <div class = "square" id = "g3"></div>
+    <div class = "square" id = "g2"></div>
+    <div class = "square" id = "g1"></div>
+</div>
+<div id = "column8" class = "column">
+    <div class = "square" id = "h10"></div>
+    <div class = "square" id = "h9"></div>
+    <div class = "square" id = "h8"></div>
+    <div class = "square" id = "h7"></div>
+    <div class = "square" id = "h6"></div>
+    <div class = "square" id = "h5"></div>
+    <div class = "square" id = "h4"></div>
+    <div class = "square" id = "h3"></div>
+    <div class = "square" id = "h2"></div>
+    <div class = "square" id = "h1"></div> 
+</div>
+<div id = "column9" class = "column">
+    <div class = "square" id = "i10"></div>
+    <div class = "square" id = "i9"></div>
+    <div class = "square" id = "i8"></div>
+    <div class = "square" id = "i7"></div>
+    <div class = "square" id = "i6"></div>
+    <div class = "square" id = "i5"></div>
+    <div class = "square" id = "i4"></div>
+    <div class = "square" id = "i3"></div>
+    <div class = "square" id = "i2"></div>
+    <div class = "square" id = "i1"></div> 
+</div>
+<div id = "column10" class = "column">
+    <div class = "square" id = "j10"></div>
+    <div class = "square" id = "j9"></div> 
+    <div class = "square" id = "j8"></div>
+    <div class = "square" id = "j7"></div>
+    <div class = "square" id = "j6"></div>
+    <div class = "square" id = "j5"></div>
+    <div class = "square" id = "j4"></div>
+    <div class = "square" id = "j3"></div>
+    <div class = "square" id = "j2"></div>
+    <div class = "square" id = "j1"></div> 
+</div>
+</div>
+</div>
+<button type="button" id="startButton">Start</button>
+<script src="script/app.js"></script>
+<script src="https://kit.fontawesome.com/76c3367925.js" crossorigin="anonymous"></script>
+</body>
+</html>
